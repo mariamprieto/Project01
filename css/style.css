@@ -1,34 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+:root {
+    --heading-font: "Alegreya Sans", sans-serif;
+    --ul-font: "Open Sans", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
-body{
-    background-color: #deeaee;
-    
-}
+
 header,
 main,
 footer {
-    max-width: 850px;
+    max-width: 650px;
     margin: 0 auto;
 }
 
-header{
-    background-color: rgb(27, 76, 139);
-    box-shadow: 0 0 30px black;
-
-}
-header div {
+header {
     margin: 1rem auto;
     padding: 1rem;
+    background-color: rgb(27, 76, 139);
     color: white;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
     align-items: center;
-    
+    grid-template-columns: 170px 1fr;
+    box-shadow: 0 0 30px black;
 }
 
 header img {
@@ -38,29 +38,29 @@ header img {
 
 header h1 {
     text-align: center;
-    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-family: var(--heading-font);
+    font-size: 20px;
+
 }
 
 main h2 {
     text-align: center;
-    font-family: -apple-system, sans-serif;
-
+    font-family: var(--heading-font);
+    font-size: 15px;
 }
 
-h3,
-p,
-a {
-
-    font-family: -apple-system,  sans-serif;
-    font-size: 16px;
+main ul li {
+    font-family: var(--ul-font);
+    font-size: 10px;
+    padding: 5px;
+    margin-left: 30px;
 }
-
 
 main p {
-    font-family: -apple-system, sans-serif;
+    font-family: var(--ul-font);
+    font-size: 8px;
     margin: 10px;
     font-style: italic;
-    text-align: center;
 
 }
 
@@ -72,30 +72,6 @@ footer {
     box-shadow: 0 0 20px black;
     text-align: center;
     color: white;
-    font-family: 'Franklin Gothic Medium',
-    sans-serif;
-}
-
-section div {
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-content: center;
-    justify-items: center;
-}
-
-ul{margin-bottom: 15px;
-margin-left: 35px;}
-ul li {
-    font-family: -apple-system,sans-serif;
-    font-size: 14px;
-    text-align: justify;
-    
-
-}
-
-header nav a{
-    text-decoration: none;
-    color:white;
-    
+    font-size: 10px;
+    font-family: var(--heading-font);
 }
