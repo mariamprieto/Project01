@@ -9,20 +9,21 @@
   <meta name="description" content="Esta página web contém o portfólio de Maria Prieto com aplicações CSS3" />
 
   <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/small.css" />
   <link rel="stylesheet" href="css/medium.css" />
   <link rel="stylesheet" href="css/large.css" />
+
 </head>
 
 <body>
   <header>
     <div class="container_header">
       <div class="avatar_cabecalho">
-        <span class="avatar_conteudo_cabecalho">
-          <img class="avatar_image" src="images/mundo.jpg" alt="Foto de mundo tecnológico" /></span>
+        <img class="avatar_image" src="images/mundo.jpg" alt="Foto de mundo tecnológico" />
       </div>
-      <nav>
-        <ul>
+      <nav class="menu">
+        <button id="hamburger"><span>&#9776;</span><span>x</span></button>
+        <ul id="primaryNav">
           <li><a href="https://mariamprieto.github.io/Project01/">PRINCIPAL</a></li>
           <li><a href="#presentacion">APRESENTAÇÃO</a></li>
           <li><a href="#formacion">FORMAÇÃO</a></li>
@@ -35,61 +36,60 @@
   </header>
   <main>
     <div class="hero_image">
-      <img class="image_hero" src="images/header_imagen.jpg"  alt="hero_image_home" />
+      <img class="image_hero" src="images/header_imagen.jpg" alt="hero_image_home" />
     </div>
     <section class="introducao_main">
-    <div class="avatar_main">
-      <span class="avatar_conteudo_main">
-        <img  class="avatar_image_main" src="images/Maria.jpg" alt="Foto de Maria Prieto" /></span>
-    </div>
-    <div id="presentacion" class="apresentacao">
-      <div class="nome_developer">
-        <h1>Maria M Prieto B</h1>
-        <h2>Full Stack Developer e Contadora</h2>
+      <div class="avatar_main">
+        <img class="avatar_image_main" src="images/Maria.jpg" alt="Foto de Maria Prieto" />
       </div>
-      <div class="apresentacao_conteudo">
-        <h2>Olá!</h2>
-        <h3>
-          Sou Maria, uma mulher empreendedora e inovadora, atuo como Full
-          Stack Developer e Contadora. Tenho mais de 13 anos de experiência
-          profissional nas áreas Contábeis (Auditoria Externa, Auditoria
-          Interna e Controles Internos) e um ano como desenvolvedor.
-        </h3>
-        <h3>
-          Meu objetivo é agregar valor aos processos críticos das empresas e
-          contribuir para o alcance de dois objetivos traçados e estabelecidos
-          pela organização com a combinação dessas duas ferramentas.
-        </h3>
-      </div>
+      <div id="presentacion" class="apresentacao">
+        <div class="nome_developer">
+          <h1>Maria Prieto</h1>
+          <h2>Full Stack Developer e Contadora</h2>
+        </div>
+        <div class="apresentacao_conteudo">
+          <h2>Olá!</h2>
+          <p>
+            Sou Maria, uma mulher empreendedora e inovadora, atuo como Full
+            Stack Developer e Contadora. Tenho mais de 13 anos de experiência
+            profissional nas áreas Contábeis (Auditoria Externa, Auditoria
+            Interna e Controles Internos) e um ano como desenvolvedor.
+          </p>
+          <p>
+            Meu objetivo é agregar valor aos processos críticos das empresas e
+            contribuir para o alcance de dois objetivos traçados e estabelecidos
+            pela organização com a combinação dessas duas ferramentas.
+          </p>
+        </div>
       </div>
       <div class="social_media">
         <div class="avatar_social1">
-          <span class="avatar_conteudo_social1">
-        <a href="https://github.com/mariamprieto">
-          <img class="avatar_social_image1" src="images/social_github_icon.png" alt="Imagen de Github"/>
-        </a>
-      </span> GITHUB
-      </div>
-      <div class="avatar_social2">
-      <span class="avatar_conteudo_social2">
-        <a href="www.linkedin.com/in/maria-prieto-99763472">
-          <img class="avatar_social_image2" src="images/social_linkedin_icon.png" alt="Linkedln Social Media" />
-        </a>
-        </span>
-        LINKEDIN
-      </div>
-      <div class="avatar_social3">
-        <span class="avatar_conteudo_social3">
-        <a href="https://stackoverflow.com/users/19130465/maria-prieto">
-          <img class="avatar_social_image3" src="images/stack_icon.png" alt="Imagen Stackoverflow" />
-        </a>
-        </span>
-        STACK OVERFLOW
+
+          <a href="https://github.com/mariamprieto">
+            <img class="avatar_social_image1" src="images/social_github_icon.png" alt="Imagen de Github" />
+          </a>
+          GITHUB
         </div>
-      
-    </div>
-  </section>
-    <section  id="formacion" class="formacao">
+        <div class="avatar_social2">
+
+          <a href="www.linkedin.com/in/maria-prieto-99763472">
+            <img class="avatar_social_image2" src="images/social_linkedin_icon.png" alt="Linkedln Social Media" />
+          </a>
+          LINKEDIN
+
+        </div>
+        <div class="avatar_social3">
+
+          <a href="https://stackoverflow.com/users/19130465/maria-prieto">
+            <img class="avatar_social_image3" src="images/stack_icon.png" alt="Imagen Stackoverflow" />
+          </a>
+
+          STACK OVERFLOW
+        </div>
+
+      </div>
+    </section>
+    <section id="formacion" class="formacao">
       <div class="formacao-conteudo">
         <h1>Formação</h1>
       </div>
@@ -121,7 +121,7 @@
       </div>
 
     </section>
-    <section  id="experiencia" class="experiencia">
+    <section id="experiencia" class="experiencia">
       <div class="experiencia-conteudo">
         <h1>Experiência</h1>
       </div>
@@ -132,8 +132,8 @@
       </div>
       <div class="experiencia-conteudo1">
         <p>2010-2012</p>
-            <h3>Gerente de contabilidade</h3>
-            <p>Ferreutil Puerto Cabello,C.A</p>
+        <h3>Gerente de contabilidade</h3>
+        <p>Ferreutil Puerto Cabello,C.A</p>
       </div>
       <div class="experiencia-conteudo1">
         <p>2007-2010</p>
@@ -142,11 +142,11 @@
       </div>
     </section>
 
-    
-      <div id="projeto" class="projecto">
-        <h1>Projetos</h1>
-      </div>
-      <section  class="projeto-conteudo">
+
+    <div id="projeto" class="projecto">
+      <h1>Projetos</h1>
+   
+    <section class="projeto-conteudo">
       <div class="card">
         <img class="image_card" src="images/projeto_html.jpg" alt="Foto de projetos com html, css e javascript" />
         <h3>
@@ -158,12 +158,12 @@
           Ducimus?
         </p>
         <div class="card_link">
-        <span class="link-repositorio"><a href="#">REPOSITÓRIO</a></span>
-        <span class="link-demo"> <a href="#">VER DEMO</a></span>
+          <span class="link-repositorio"><a href="#">REPOSITÓRIO</a></span>
+          <span class="link-demo"> <a href="#">VER DEMO</a></span>
         </div>
       </div>
       <div class="card">
-        <img  class="image_card" src="images/projeto_mysql.png" alt="Foto de projetos com mysql" />
+        <img class="image_card" src="images/projeto_mysql.png" alt="Foto de projetos com mysql" />
         <h3>
           Titulo de Projeto
         </h3>
@@ -173,8 +173,8 @@
           Ducimus?
         </p>
         <div class="card_link">
-        <span class="link-repositorio"><a href="#">REPOSITÓRIO</a></span>
-        <span class="link-demo"> <a href="#">VER DEMO</a></span>
+          <span class="link-repositorio"><a href="#">REPOSITÓRIO</a></span>
+          <span class="link-demo"> <a href="#">VER DEMO</a></span>
         </div>
       </div>
       <div class="card">
@@ -188,70 +188,77 @@
           Ducimus?
         </p>
         <div class="card_link">
-        <span class="link-repositorio"><a href="#">REPOSITÓRIO</a></span>
-        <span class="link-demo"> <a href="#">VER DEMO</a></span>
+          <span class="link-repositorio"><a href="#">REPOSITÓRIO</a></span>
+          <span class="link-demo"> <a href="#">VER DEMO</a></span>
         </div>
       </div>
     </section>
+    </div>
   </main>
   <footer>
     <div id="fale" class="container_footer">
-      
-      <div  class="conteudo_footer">
+
+      <div class="conteudo_footer">
         <h1> Contato</h1>
         <p> Quer entrar em contato comigo? </p>
 
         <p>Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
         <p> Você também pode me encontrar nas seguintes redes sociais: </p>
 
-      
-      <div class="social_media_footer">
-        <div class="avatar_footer1">
-          <span class="avatar_conteudo_footer1">
-            <a href="https://www.facebook.com">
-              <img class="avatar_footer_image1" src="images/social_facebook_icon.png" alt="Imagen de facebook" />
-            </a>
-          </span> FACEBOOK
-        </div>
-        <div class="avatar_footer1">
-          <span class="avatar_conteudo_footer1">
-            <a href="https://www.instagram.com">
-              <img class="avatar_footer_image1" src="images/social_instagram_icon.png" alt="Instagram Social Media" />
-            </a>
-          </span>
-          INSTAGRAM
-        </div>
-        <div class="avatar_footer1">
-          <span class="avatar_conteudo_footer1">
-            <a href="https://twitter.com">
-              <img class="avatar_footer_image3" src="images/twitter_icon.png" alt="Twitter image" />
-            </a>
-          </span>
-          TWITTER
+
+        <div class="social_media_footer">
+          
+            <div class="avatar_footer1">
+              <a href="https://www.facebook.com">
+                <img class="avatar_footer_image1" src="images/social_facebook_icon.png" alt="Imagen de facebook" />
+              </a>
+             FACEBOOK
+          </div>
+          <div class="avatar_footer1">
+            
+              <a href="https://www.instagram.com">
+                <img class="avatar_footer_image1" src="images/social_instagram_icon.png" alt="Instagram Social Media" />
+              </a>
+           
+            INSTAGRAM
+          </div>
+          <div class="avatar_footer1">
+            
+              <a href="https://twitter.com">
+                <img class="avatar_footer_image1" src="images/twitter_icon.png" alt="Twitter image" />
+              </a>
+            
+            TWITTER
+          </div>
         </div>
       </div>
-      </div>
+  <h1  class="title_form">📧 Contate-Nos</h1>
+  <form action="" method="get">
+    <div id="message"></div>
+    <label for="fname">Nome:</label>
+    <input type="text" id="fname" name="fname" required placeholder="Digite seu nome" />
+    <label for="lname">Sobrenome:</label>
+    <input type="text" id="lname" name="lname" required placeholder="Digite seu sobrenome"/>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required  />
+    <label for="phone">Telefone:</label>
+    <input type="phone" id="phone" name="phone" />
+    <label for="keyphrase">Key Phrase:</label>
+    <input type="text" id="keyphrase" name="keyphrase" pattern="[a-z]*" required /> <!-- {min,max} -->
+    <label for="keyphrase2">Re-enter Key Phrase:</label>
+    <input type="text" id="keyphrase2" name="keyphrase2" />
+  
+    <label for="comments">Mensagem:</label>
+    <textarea id="comments" name="comments" required></textarea>
+    <button id="btnSubmit" type="submit">Enviar Mensagem</button>
+    <input type="hidden" value="4">
+  </form>
+
     
-    <div>
-    
-<form action="" method="get">
-      <label for="fname">Nome:</label>
-      <input type="text" id="fname" name="fname" required />
-      <label for="lname">Sobrenome:</label>
-      <input type="text" id="lname" name="lname" required />
-      <label for="email">Email:</label>
-      <input type="text" id="email" name="email" required />
-      <label for="phone">Número de Telefone:</label>
-      <input type="phone" id="phone" name="phone" />
-      <label for="subject">Asunto:</label>
-      <input type="text" id="subject" name="subject" />
-      <label for="message">Mensagem:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button id="btnSubmit" type="submit">Enviar</button>
-    </form>
-    </div>
     </div>
   </footer>
+  <script src="js/form.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 
 </html>
