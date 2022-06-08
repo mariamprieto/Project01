@@ -119,7 +119,7 @@ header {
     position: relative;
     display: flex;
    flex-direction: column;
-
+   
 }
 
 
@@ -357,11 +357,13 @@ header {
 /*----------- apply style footer--------------*/
 footer {
     background-color: #000C66;
+   
 
 
 }
 
 .container_footer {
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
     padding: 10px 10px;
@@ -414,6 +416,7 @@ form {
     display: grid;
     grid-gap: 0.25rem;
     align-items: center;
+   
 }
 
 label,
