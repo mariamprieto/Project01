@@ -128,4 +128,11 @@ button {
     font-size: 18px;
 }
 
+.api_weather {
+    
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+}
 }
