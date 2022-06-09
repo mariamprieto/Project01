@@ -457,9 +457,6 @@ button {
     animation: shaketext 500ms;
 }
 
-input:valid+input::before {
-    content: "👍🏼";
-}
 
 @keyframes shaketext {
     25% {
