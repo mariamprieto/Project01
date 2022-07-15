@@ -2,24 +2,22 @@ const weatherIcon = document.querySelector(".weatherIcon");
 const iconDesc = document.querySelector(".iconDesc");
 const localtemp = document.querySelector(".temp");
 const wSpeed = document.querySelector(".windSpeed");
-const wChill = document.querySelector(".windChill");
+const wChill = document.querySelector(".wChill");
 
-const api =
-  "https://api.openweathermap.org/data/2.5/weather?q=Olathe,KS,USA&units=imperial&APPID=da28ef0488cf8a1538d20c2db5897dd8";
-
+// Creating a variable with the API URL
+const api = "https://api.openweathermap.org/data/2.5/weather?q=Venezuela&imperial&APPID=da28ef0488cf8a1538d20c2db5897dd8";
 let data, newTemp, speed;
 
 async function getWeather() {
   const response = await fetch(api);
   data = await response.json();
-  console.log(data);
   return data;
 }
 
 const fillData = async () => {
   await getWeather();
-  newTemp = data["main"]["temp"];
-  speed = data["wind"]["speed"];
+  newTemp = data.main.temp;
+  speed = data.wind.speed;
 
   let currentTemp = Math.round(newTemp);
   localtemp.textContent += `${currentTemp}`;
@@ -32,11 +30,11 @@ const fillData = async () => {
 
 const getIconDesc = async () => {
   await fillData();
-  let icon = data["weather"][0]["icon"];
-  let desc = data["weather"][0]["description"];
+  let icon = data.weather[0].icon;
+  let desc = data.weather[0].description;
 
-  weatherIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
-  weatherIcon.alt = `open weather map API icon: ${desc}`;
+  weatherIcon.src = `https://openweathermap.org/img/wn/${icon}.png`;
+  weatherIcon.alt = `API Image of ${desc}`;
   iconDesc.textContent = desc.toUpperCase();
 };
 
@@ -54,5 +52,6 @@ const calculateWindChill = async () => {
     wChill.textContent = `N/A`;
   }
 };
+
 
 window.addEventListener("load", calculateWindChill);

@@ -1,46 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maria M. Prieto B</title>
-    <meta name="description"
-        content="Este site contém os detalhes de cada um dos projetos exigidos pela sala de aula" />
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/medium.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maria M. Prieto B</title>
+  <meta name="description" content="Esta página web contém o portfólio de Maria Prieto, " />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/small.css" />
+  <link rel="stylesheet" href="css/medium.css" />
+  <link rel="stylesheet" href="css/large.css" />
 
-    
 </head>
 
 <body>
-    <header>
-        <img src="images/Maria.jpg" alt="Personal Picture" />
-        <h1> Maria M. Prieto Blanco</h1>
-   
-    </header>
-    <main>
-        <h2>Turma 15:Programacao Full Stack-Toti Diversidade</h2>
-        <hr>
-        <ul>
-            <li><strong>Aula 02:HTML:  </strong><a href="aula01_html/index.html">Projeto HTML</a></li>
-            <li><strong>Aula 03-04:CSS3-JavaScript: </strong><a href="aula02_css/index.html">Projeto CSS-JavaScript</a></li>
-            <li><strong>Aula 05:React </strong><a href="#"></a></li>
-            <li><strong>Aula 06:Api Rest </strong><a href="#"></a></li>
-            <li><strong>Aula 07:Node JS </strong><a href="#"></a></li>
-            <li><strong>Aula 08:SQ Lite </strong> <a href="#"></a></li>
-        
+  <header>
+    <div class="container_header">
+      <div class="avatar_cabecalho">
+        <img class="avatar_image" src="images/mundo.jpg" alt="Foto de mundo tecnológico" />
+      </div>
+      <nav class="menu">
+        <button id="hamburger"><span>&#9776;</span><span>x</span></button>
+        <ul id="primaryNav">
+          <li><a href="#">PRINCIPAL</a></li>
+          <li><a href="#presentacion">APRESENTAÇÃO</a></li>
+          <li><a href="#formacion">FORMAÇÃO</a></li>
+          <li><a href="#experiencia">EXPERIÊNCIA</a></li>
+          <li><a href="#projeto">PROJETOS</a></li>
+          <li><a href="#fale">FALE COMIGO!</a></li>
         </ul>
-        <hr>
-        
-    </main>
-    <footer>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="hero_image">
+      <img class="image_hero" src="images/header_imagen.jpg" alt="hero_image_home" />
+    </div>
+    <section class="introducao_main">
+      <div class="avatar_main">
+        <img class="avatar_image_main" src="images/image_main.jpeg" alt="Foto de Maria Prieto" />
+      </div>
+      <div id="presentacion" class="apresentacao">
+        <div class="nome_developer">
+          <h1>Maria Prieto</h1>
+          <h2>Full Stack Developer e Contadora</h2>
+        </div>
+        <div class="apresentacao_conteudo">
+          <h2>Olá!</h2>
+          <p>
+            Sou Maria, uma mulher empreendedora e inovadora, atuo como Full
+            Stack Developer e Contadora. Tenho mais de 13 anos de experiência
+            profissional nas áreas Contábeis (Auditoria Externa, Auditoria
+            Interna e Controles Internos) e um ano como desenvolvedor.
+          </p>
+          <p>
+            Meu objetivo é agregar valor aos processos críticos das empresas e
+            contribuir para o alcance de dois objetivos traçados e estabelecidos
+            pela organização com a combinação dessas duas ferramentas.
+          </p>
+        </div>
+      </div>
+      <div class="social_media">
+        <div class="avatar_social1">
 
-        &copy;<span id="currentyear"></span>.:|:. Maria M. Prieto B .:|:. Brazil <br>
-        Last Updated: <span id="lastupdated"></span>
-    </footer>
-    <script src="js/currentdate.js"></script>
+          <a href="https://github.com/mariamprieto">
+            <img class="avatar_social_image1" src="images/social_github_icon.png" alt="Imagen de Github" />
+          </a>
+          GITHUB
+        </div>
+        <div class="avatar_social2">
+
+          <a href="www.linkedin.com/in/maria-prieto-99763472">
+            <img class="avatar_social_image2" src="images/social_linkedin_icon.png" alt="Linkedln Social Media" />
+          </a>
+          LINKEDIN
+
+        </div>
+        <div class="avatar_social3">
+
+          <a href="https://stackoverflow.com/users/19130465/maria-prieto">
+            <img class="avatar_social_image3" src="images/stack_icon.png" alt="Imagen Stackoverflow" />
+          </a>
+
+          STACK OVERFLOW
+        </div>
+
+      </div>
+    </section>
+    <section id="formacion" class="formacao">
+      <div class="formacao-conteudo">
+        <h2>Formação</h2>
+      </div>
+
+      <div class="formacao-conteudo1">
+        <p>2022-Presente</p>
+        <h3>Full Stack Developer</h3>
+        <p>Toti Diversidade</p>
+      </div>
+      <div class="formacao-conteudo1">
+        <p>2022-Presente</p>
+        <h3>Finances Master</h3>
+        <p>EUDE-European Business School</p>
+      </div>
+      <div class="formacao-conteudo1">
+        <p>2021-Presente</p>
+        <h3>Web and Computer Programming</h3>
+        <p>Brigham Young University-Idaho</p>
+      </div>
+      <div class="formacao-conteudo1">
+        <p>2019-2020</p>
+        <h3>Pathway Connect Certificate</h3>
+        <p>BYU-Pathway Worldwide</p>
+      </div>
+      <div class="formacao-conteudo1">
+        <p>2003-2008</p>
+        <h3>Graduação em Contabilidade</h3>
+        <p>Universidad de Carabobo</p>
+      </div>
+
+    </section>
+    <section id="experiencia" class="experiencia">
+      <div class="experiencia-conteudo">
+        <h2>Experiência</h2>
+      </div>
+      <div class="experiencia-conteudo1">
+        <p>2014-2021</p>
+        <h3>Independente Auditor Externo</h3>
+        <p>Asociación International (CIC) e S.C Aguilar, Godoy y Asociados</p>
+      </div>
+      <div class="experiencia-conteudo1">
+        <p>2010-2012</p>
+        <h3>Gerente de contabilidade</h3>
+        <p>Ferreutil Puerto Cabello,C.A</p>
+      </div>
+      <div class="experiencia-conteudo1">
+        <p>2007-2010</p>
+        <h3>External Auditor</h3>
+        <p>PricewaterhouseCoopers (PWC.) Valencia</p>
+      </div>
+    </section>
+
+
+    <div id="projeto" class="projecto">
+      <h2>Projetos</h2>
+      <section class="projeto-conteudo">
+        <div class="card">
+          <img class="image_card" src="images/projeto_html.jpg" alt="Foto de projetos com html, css e javascript" />
+          <h3>
+            Projeto HTML-CSS- Javascript
+          </h3>
+          <p>
+            Este projeto foi realizado para cumprir com as exigências do curso WDD230 da universidade BYUI-Online.
+          </p>
+          <div class="card_link">
+            <span class="link-repositorio"><a href="https://mariamprieto.github.io/wdd230/">REPOSITÓRIO</a></span>
+            <span class="link-demo"> <a href="#">VER DEMO</a></span>
+          </div>
+        </div>
+        <div class="card">
+          <img class="image_card" src="images/projeto_mysql.png" alt="Foto de projetos com mysql" />
+          <h3>
+            Projeto de SQL e NodeJS
+          </h3>
+          <p>
+            Execução de consultas de banco de dados usando SQLite e criação de um ambiente de execução usando NodeJS.
+          </p>
+          <div class="card_link">
+            <span class="link-repositorio"><a href="https://github.com/mariamprieto/node_projeto_toti.git">REPOSITÓRIO</a></span>
+            <span class="link-demo"> <a href="#">VER DEMO</a></span>
+          </div>
+        </div>
+        <div class="card">
+          <img class="image_card" src="images/projeto_python.jpg" alt="Foto de Foto de projetos com python" />
+          <h3>
+            Projeto React
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, amet? Quasi doloremque officiis
+          </p>
+          <div class="card_link">
+            <span class="link-repositorio"><a href="#">REPOSITÓRIO</a></span>
+            <span class="link-demo"> <a href="#">VER DEMO</a></span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="api_weather">
+      <img class="time_imagen" src="images/wheater_icon2.jpeg" alt="sol imagen">
+      <div id="weather" class="api_result">
+        <h2 class="weather">O tempo hoje</h2>
+        <img class="weatherIcon" src="#" alt="">
+        <p class="degree"><span class="temp"></span>&#176;F</p>
+        <p class="iconDesc"></p>
+        <p class="ws">Velocidade do vento:<span class="windSpeed"></span></p>
+        <p class="wc">Frio de Vento: <span class="wChill"></span></p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div id="fale" class="container_footer">
+
+      <div class="conteudo_footer">
+        <h2> Contato</h2>
+        <p> Quer entrar em contato comigo? </p>
+
+        <p>Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
+        <p> Você também pode me encontrar nas seguintes redes sociais: </p>
+
+
+        <div class="social_media_footer">
+
+          <div class="avatar_footer1">
+            <a href="https://www.facebook.com">
+              <img class="avatar_footer_image1" src="images/social_facebook_icon.png" alt="Imagen de facebook" />
+            </a>
+            FACEBOOK
+          </div>
+          <div class="avatar_footer1">
+
+            <a href="https://www.instagram.com">
+              <img class="avatar_footer_image1" src="images/social_instagram_icon.png" alt="Instagram Social Media" />
+            </a>
+
+            INSTAGRAM
+          </div>
+          <div class="avatar_footer1">
+
+            <a href="https://twitter.com">
+              <img class="avatar_footer_image1" src="images/twitter_icon.png" alt="Twitter image" />
+            </a>
+
+            TWITTER
+          </div>
+        </div>
+      </div>
+      <div class="form">
+        <h1 class="title_form">📧 Contate-Nos</h1>
+        <form action="#" method="get">
+
+          <div id="message"></div>
+          <label for="fname">Nome:</label>
+          <input type="text" id="fname" name="fname" required placeholder="Digite seu nome" />
+          <label for="lname">Sobrenome:</label>
+          <input type="text" id="lname" name="lname" required placeholder="Digite seu sobrenome" />
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required />
+          <label for="phone">Telefone:</label>
+          <input type="number" id="phone" name="phone" />
+          <label for="keyphrase">Frase chave:</label>
+          <input type="text" id="keyphrase" name="keyphrase" pattern="[a-z]*" required /> <!-- {min,max} -->
+          <label for="keyphrase2">Reinsira a frase-chave:</label>
+          <input type="text" id="keyphrase2" name="keyphrase2" />
+
+          <label for="comments">Mensagem:</label>
+          <textarea id="comments" name="comments" required></textarea>
+          <button id="btnSubmit" type="submit">Enviar Mensagem</button>
+          <input type="hidden" value="4">
+        </form>
+      </div>
+
+    </div>
+  </footer>
+  <script src="js/form.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/api_tempo.js"></script>
 </body>
 
 </html>
